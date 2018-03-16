@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.75"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/master.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
@@ -84,31 +84,15 @@
         </div>
     </section>
 
-    <section id="section4">
+    <section id="section4" ng-controller="rating_controller">
         <p class="sect_title" id="rat_head">They say</p>
         <div class="line st intline" id="rat_line"></div>
-        <div class="rating" id="rate1">
+        <div class="rating" id="rate{{$index+1}}" ng-repeat="review in reviews">
             <div class="r_avt"><img src="./res/img/rater/r2.jpeg" alt=""></div>
-            <p class="intname r_name">Himanshu Pathak</p>
-            <p class="inttext r_post">DEVELOPER</p>
+            <p class="intname r_name">{{review.name}}</p>
+            <p class="inttext r_post">{{review.post}}</p>
             <div class="line sl" id="r_line"></div>
-            <p class="inttext r_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam magni dolores cum illo doloremque ex neque, nihil quasi eos!</p>
-            <div class="stars"></div>
-        </div>
-        <div class="rating" id="rate2">
-            <div class="r_avt"><img src="./res/img/rater/r2.jpeg" alt=""></div>
-            <p class="intname r_name">Himanshu Pathak</p>
-            <p class="inttext r_post">DEVELOPER</p>
-            <div class="line sl" id="r_line"></div>
-            <p class="inttext r_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam magni dolores cum illo doloremque ex neque, nihil quasi eos!</p>
-            <div class="stars"></div>
-        </div>
-        <div class="rating" id="rate3">
-            <div class="r_avt"><img src="./res/img/rater/r2.jpeg" alt=""></div>
-            <p class="intname r_name">Himanshu Pathak</p>
-            <p class="inttext r_post">DEVELOPER</p>
-            <div class="line sl" id="r_line"></div>
-            <p class="inttext r_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam magni dolores cum illo doloremque ex neque, nihil quasi eos!</p>
+            <p class="inttext r_text">{{review.text}}</p>
             <div class="stars"></div>
         </div>
     </section>
