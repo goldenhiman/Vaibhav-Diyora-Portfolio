@@ -176,8 +176,8 @@ nav ul{
 }
 
 .interest:hover{
-    box-shadow: 0 0 5px #68686880;
-    transition: 0.3s ease-out;
+    box-shadow: 0 0 5px #686868ab;
+    transition: 0.2s ease-out;
 }
 
 .imgbor{
