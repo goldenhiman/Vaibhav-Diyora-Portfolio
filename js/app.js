@@ -11,7 +11,7 @@ app.controller('rating_controller',['$scope',function($scope){
     $scope.reviews = [
         {
             name: 'Himanshu Pathak',
-            post: 'Developer'.toUpperCase,
+            post: 'Developer'.toUpperCase(),
             text: "“Do I really look like a guy with a plan? You know what I am? I'm a dog chasing cars. I wouldn't know what to do with one if I caught it! You know, I just... *do* things.”",
             rating: 4
         },

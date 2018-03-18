@@ -360,6 +360,7 @@ nav ul{
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 10px;
+    text-transform: uppercase;
 }
 #r_line{
     margin: 0 auto;
