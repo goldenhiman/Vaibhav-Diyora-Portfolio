@@ -11,20 +11,20 @@ app.controller('rating_controller',['$scope',function($scope){
     $scope.reviews = [
         {
             name: 'Himanshu Pathak',
-            post: 'Developer'.toUpperCase(),
+            post: 'Developer',
             text: "“Do I really look like a guy with a plan? You know what I am? I'm a dog chasing cars. I wouldn't know what to do with one if I caught it! You know, I just... *do* things.”",
             rating: 4
         },
         {
-            name: 'Himanshu Pathak',
-            post: 'Developer'.toUpperCase,
-            text: "“Do I really look like a guy with a plan? You know what I am? I'm a dog chasing cars. I wouldn't know what to do with one if I caught it! You know, I just... *do* things.”",
+            name: 'Rishabh Bajpai',
+            post: 'Wellwisher',
+            text: "“The only person I ever shared my secret of High Metabolism with. He never thanked me tho!",
             rating: 4
         },
         {
-            name: 'Himanshu Pathak',
-            post: 'Developer'.toUpperCase,
-            text: "“Do I really look like a guy with a plan? You know what I am? I'm a dog chasing cars. I wouldn't know what to do with one if I caught it! You know, I just... *do* things.”",
+            name: 'Ankit Patel',
+            post: 'Supplier',
+            text: "“I smoked weed once with him.. why does he even call me a friend> Such a clingy dude. He's got to get his shit together.”",
             rating: 4
         }
     ];
