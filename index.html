@@ -18,10 +18,10 @@
             <h2 class="logo">VD.</h2>
             <nav class="prim_nav">
                 <ul>
-                    <li class="nav_item"><a href="#section1" class="active_nav">home</a></li>
-                    <li class="nav_item"><a href="#section2">about</a></li>
-                    <li class="nav_item"><a href="#section3">portfolio</a></li>
-                    <li class="nav_item"><a href="#section5">contact</a></li>
+                    <li class="nav_item"><a data-scroll href="#section1" class="active_nav">home</a></li>
+                    <li class="nav_item"><a data-scroll href="#section2">about</a></li>
+                    <li class="nav_item"><a data-scroll href="#section3">portfolio</a></li>
+                    <li class="nav_item"><a data-scroll href="#section5">contact</a></li>
                     <li class="nav_item"><a href="./res/img/VDCV.pdf">download cv</a></li>
                 </ul>
             </nav>
@@ -131,5 +131,10 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ7-aOSYHxtUNAFTaPacp8VM0QDynkqkI&callback=myMap"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('.nav-item a[href*="#"]');
+    </script>
 </body>
 </html>
