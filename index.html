@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.75">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
     <link rel="stylesheet" href="./css/master.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
@@ -74,14 +75,14 @@
             <p class="intname">My Paintings</p>
             <div class="line sl intline"></div>
             <div class="album_view" id="pa_alb">
-                <div class="p_img" ng-repeat="num in numarr"><img ng-src="./res/img/paint/{{num}}.jpg" alt=""></div>
+                <div class="p_img" ng-repeat="num in numarr"><a href="./res/img/paint/fullsize/{{num}}.jpg" data-lightbox="paint"><img ng-src="./res/img/paint/{{num}}.jpg" alt=""></a></div>
             </div>
         </div>
         <div class="album" id="photographs">
             <p class="intname">My photographs</p>
             <div class="line sl intline"></div>
             <div class="album_view" id="ph_alb">
-                <div id="p_img1" class="p_img" ng-repeat="num in numarr"><img src="./res/img/photos/{{num}}.jpg" alt=""></div>
+                <div id="p_img1" class="p_img" ng-repeat="num in numarr"><a href="./res/img/photos/fullsize/{{num}}.jpg" data-lightbox="photos"><img src="./res/img/photos/{{num}}.jpg" alt=""></a></div>
             </div>
         </div>
     </section>
@@ -106,7 +107,7 @@
     </section>
 
     <footer>
-        <form action="contact.php">
+        <form method="POST" action="contact.php">
             <div id="cont" class="inttext">Contact me via email</div>
             <div><input type="name" name="cf_name" placeholder="Your Name">
             <input type="email" name="cf_email" placeholder="Email"></div>
@@ -128,5 +129,7 @@
     <script src="./js/script.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ7-aOSYHxtUNAFTaPacp8VM0QDynkqkI&callback=myMap"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
