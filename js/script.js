@@ -10,3 +10,25 @@ function myMap() {
       });
     
 }
+
+$(document).ready(function(){
+  $('a.smoothScroll').on('click',function(e){
+    $(this).hide();
+    $(this).parent().siblings().children('a.smoothScroll').removeClass('active_nav');
+  });
+
+  $(window).scroll(function(){
+    /* -------------------
+    Header Animation
+    ---------------------*/
+    if ($(this).scrollTop() > 700){  
+        $('header').addClass("showhead");
+    }
+    else{
+        $('header').removeClass("showhead")
+    }
+    
+});
+
+  alert('this is working');
+});
