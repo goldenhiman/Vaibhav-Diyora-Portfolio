@@ -7,3 +7,4 @@ $('a.smoothScroll').bind('click', function(event) {
     $anchor.parent.siblings.removeClass('active_nav')
     event.preventDefault();
 });
+
