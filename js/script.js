@@ -28,7 +28,7 @@ $(document).ready(function(){
     /* ------------------
     Header Links Color
     -------------------*/
-    if($(this).scrollTop() >= ($('#section1').offset().top-60) && $(this).scrollTop() < ($('#section2').offset().top-54)){
+    if($(this).scrollTop() >= ($('#section1').offset().top-54) && $(this).scrollTop() < ($('#section2').offset().top-54)){
       $('a[href="#section1"]').addClass('active_nav');
     }else{
       $('a[href="#section1"]').removeClass('active_nav');
@@ -55,3 +55,13 @@ $(document).ready(function(){
     
   });
 });
+
+// cache updation
+
+var appCache = window.applicationCache;
+
+appCache.update(); // Attempt to update the user's cache.
+
+if (appCache.status == window.applicationCache.UPDATEREADY) {
+  appCache.swapCache();  // The fetch was successful, swap in the new cache.
+}

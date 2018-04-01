@@ -1,0 +1,14 @@
+CACHE MANIFEST
+#v1.0 2018-03-31
+
+CACHE:
+./index.html
+./css/master.css
+./js/app.js
+./js/script.js
+./smoothScroll.js
+./res/fonts/ps.otf
+./res/img/vd.png
+./res/img/vd2.jpg
+https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js
+
