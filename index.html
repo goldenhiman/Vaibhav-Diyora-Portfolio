@@ -19,7 +19,7 @@
             <h2 class="logo">VD.</h2>
             <nav class="prim_nav">
                 <ul>
-                    <li class="nav_item"><a class="smoothScroll active_nav" href="#section1" >home</a></li>
+                    <li class="nav_item"><a class="smoothScroll" href="#section1" >home</a></li>
                     <li class="nav_item"><a class="smoothScroll" href="#section2">about</a></li>
                     <li class="nav_item"><a class="smoothScroll" href="#section3">portfolio</a></li>
                     <li class="nav_item"><a class="smoothScroll" href="#section5">contact</a></li>
@@ -78,14 +78,14 @@
             <p class="intname">My Paintings</p>
             <div class="line sl intline"></div>
             <div class="album_view" id="pa_alb">
-                <div class="p_img" ng-repeat="num in numarr"><a href="./res/img/paint/fullsize/{{num}}.jpg" data-lightbox="paint"><img ng-src="./res/img/paint/{{num}}.jpg" alt=""></a></div>
+                <div class="p_img" ng-repeat="num in numarr | orderBy:'-'"><a href="./res/img/paint/fullsize/{{num}}.jpg" data-lightbox="paint"><img ng-src="./res/img/paint/{{num}}.jpg" alt=""></a></div>
             </div>
         </div>
         <div class="album" id="photographs">
             <p class="intname">My photographs</p>
             <div class="line sl intline"></div>
             <div class="album_view" id="ph_alb">
-                <div id="p_img1" class="p_img" ng-repeat="num in numarr"><a href="./res/img/photos/fullsize/{{num}}.jpg" data-lightbox="photos"><img src="./res/img/photos/{{num}}.jpg" alt=""></a></div>
+                <div id="p_img1" class="p_img" ng-repeat="num in numarr | orderBy:'-'"><a href="./res/img/photos/fullsize/{{num}}.jpg" data-lightbox="photos"><img src="./res/img/photos/{{num}}.jpg" alt=""></a></div>
             </div>
         </div>
     </section>

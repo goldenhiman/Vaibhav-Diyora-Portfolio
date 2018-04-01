@@ -12,10 +12,7 @@ function myMap() {
 }
 
 $(document).ready(function(){
-  $('a.smoothScroll').on('click',function(e){
-    $(this).hide();
-    $(this).parent().siblings().children('a.smoothScroll').removeClass('active_nav');
-  });
+  
 
   $(window).scroll(function(){
     /* -------------------
@@ -27,8 +24,34 @@ $(document).ready(function(){
     else{
         $('header').removeClass("showhead")
     }
-    
-});
 
-  alert('this is working');
+    /* ------------------
+    Header Links Color
+    -------------------*/
+    if($(this).scrollTop() >= ($('#section1').offset().top-60) && $(this).scrollTop() < ($('#section2').offset().top-54)){
+      $('a[href="#section1"]').addClass('active_nav');
+    }else{
+      $('a[href="#section1"]').removeClass('active_nav');
+    }
+
+    if($(this).scrollTop() >= ($('#section2').offset().top-54) && $(this).scrollTop() < ($('#section3').offset().top-54)){
+      $('a[href="#section2"]').addClass('active_nav');
+    }else{
+      $('a[href="#section2"]').removeClass('active_nav');
+    }
+
+    if($(this).scrollTop() >= ($('#section3').offset().top-54) && $(this).scrollTop() < ($('#section5').offset().top-54)){
+      $('a[href="#section3"]').addClass('active_nav');
+    }else{
+      $('a[href="#section3"]').removeClass('active_nav');
+    }
+
+    if($(this).scrollTop() >= ($('#section5').offset().top-54)){
+      $('a[href="#section5"]').addClass('active_nav');
+    }else{
+      $('a[href="#section5"]').removeClass('active_nav');
+    }
+    
+    
+  });
 });
